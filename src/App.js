@@ -1,6 +1,4 @@
 import {  useSelector, useDispatch } from 'react-redux'
-import {Component} from 'react'
-
 import './App.css';
 
 function App() {
