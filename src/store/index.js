@@ -9,14 +9,14 @@ const initialState={
 const counterReducer = (state = initialState, action)=>{
     console.log('reducer fired')
     if(action.type === 'inc'){
-        return {counter: state.counter += 1}
+        return {...state, counter: state.counter += 1}
     }
     if(action.type === 'dec'){
-        return {counter: state.counter -= 1}
+        return {...state, counter: state.counter -= 1}
     }
 
     if(action.type === 'increseby'){
-        return {counter: state.counter += action.amount}
+        return {...state, counter: state.counter += action.amount}
     }
 
     if(action.type === 'toggleVisibility'){
